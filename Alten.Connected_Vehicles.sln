@@ -25,6 +25,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alten.Connected_Vehicles.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alten.Connected_Vehicles.WebAPI.Tests", "Alten.Connected_Vehicles.WebAPI.Tests\Alten.Connected_Vehicles.WebAPI.Tests.csproj", "{40C986A8-2162-4608-A36B-85C1572EEDB3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLScripts", "SQLScripts", "{1F373788-D9DC-4B1B-B89A-052317BFFA84}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Alten_Task\SQL\Customer.sql = ..\..\Alten_Task\SQL\Customer.sql
+		..\..\Alten_Task\SQL\RawTransctions.sql = ..\..\Alten_Task\SQL\RawTransctions.sql
+		..\..\Alten_Task\SQL\Transactions.sql = ..\..\Alten_Task\SQL\Transactions.sql
+		..\..\Alten_Task\SQL\Vehicles.sql = ..\..\Alten_Task\SQL\Vehicles.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
