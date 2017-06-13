@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Alten.Connected_Vehicles.Infrastructure.Repository.PagedList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAABAAAAAAAEAAUAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Repository\PagedList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.Repository.IPagedList&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAABAAAAAAAEAAUAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Repository\IPagedList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.Repository.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIYAAAAICAAAAAAAAAAAAAQAAAEBAAAAAIAAQAQECAA=</HashCode>
+      <FileName>Repository\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.Repository.IRepositoryAsync&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACAAAAJAAAAKCEAAAAAAAgAAAAAIEAAAIE=</HashCode>
+      <FileName>Repository\IRepositoryAsync.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.Repository.IRepositoryAsyncExtension&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAACQAAAAAAAAAAAaAAAAAAEA=</HashCode>
+      <FileName>Repository\IRepositoryAsyncExtension.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.Repository.IRepositoryExtension&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAgABAAQAAAAACABAAAAAAAAoAAAAAAAAA=</HashCode>
+      <FileName>Repository\IRepositoryExtension.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alten.Connected_Vehicles.Infrastructure.UnitOfWork.IUnitOfWork&lt;T&gt;" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitOfWork\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

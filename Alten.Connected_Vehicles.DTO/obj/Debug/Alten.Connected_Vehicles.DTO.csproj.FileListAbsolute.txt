@@ -1,0 +1,9 @@
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DTO.dll
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DTO.pdb
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DAL.dll
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\EntityFramework.dll
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DAL.pdb
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\EntityFramework.xml
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.csprojResolveAssemblyReference.cache
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.dll
+E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.pdb
