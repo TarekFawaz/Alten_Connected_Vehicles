@@ -35,7 +35,7 @@ namespace Alten.Connected_Vehicles.WebAPI.Controllers
         public bool UpdateVehicleStatus(string RegNo,bool status)
         {
             return _vehicleService.UpdateVehicle(RegNo, status);
-            //Update
+            
         }
     }
 }
