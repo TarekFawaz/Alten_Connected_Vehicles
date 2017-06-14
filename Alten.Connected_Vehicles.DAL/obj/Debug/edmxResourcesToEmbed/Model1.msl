@@ -16,31 +16,31 @@
     <EntitySetMapping Name="RawTransctions">
       <EntityTypeMapping TypeName="Alten_Connected_VehiclesModel.RawTransction">
         <MappingFragment StoreEntitySet="RawTransctions">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="RawData" ColumnName="RawData" />
           <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Vehicles">
-      <EntityTypeMapping TypeName="Alten_Connected_VehiclesModel.Vehicle">
-        <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="RawData" ColumnName="RawData" />
           <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
-          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
-          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
-          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
-          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
-          <ScalarProperty Name="Active" ColumnName="Active" />
-          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Transactions">
       <EntityTypeMapping TypeName="Alten_Connected_VehiclesModel.Transaction">
         <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="Alten_Connected_VehiclesModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="RegNo" ColumnName="RegNo" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>

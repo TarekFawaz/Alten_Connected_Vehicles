@@ -14,9 +14,9 @@ namespace Alten.Connected_Vehicles.DAL
     
     public partial class Transaction
     {
-        public System.Guid ID { get; set; }
         public string RegNo { get; set; }
         public System.DateTime EntryDate { get; set; }
         public bool Status { get; set; }
+        public int ID { get; set; }
     }
 }

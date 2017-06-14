@@ -12,20 +12,39 @@
     <Property Name="CreatedOn" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Vehicles" Relationship="Alten_Connected_VehiclesModel.FK_Vehicles_Customer" FromRole="Customer" ToRole="Vehicle" />
   </EntityType>
+  <EntityContainer Name="Alten_Connected_VehiclesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="RawTransctions" EntityType="Alten_Connected_VehiclesModel.RawTransction" />
+    <EntitySet Name="Transactions" EntityType="Alten_Connected_VehiclesModel.Transaction" />
+    <EntitySet Name="Vehicles" EntityType="Alten_Connected_VehiclesModel.Vehicle" />
+    <AssociationSet Name="FK_Vehicles_Customer" Association="Alten_Connected_VehiclesModel.FK_Vehicles_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Vehicle" EntitySet="Vehicles" />
+    </AssociationSet>
+  </EntityContainer>
   <EntityType Name="RawTransction">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="Guid" Nullable="false" />
-    <Property Name="RawData" Type="Binary" MaxLength="256" FixedLength="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RawData" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="EntryDate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityType Name="Vehicle">
+  <EntityType Name="Transaction">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="RegNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="RegNo" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="CustomerID" Type="Guid" />
     <Property Name="LastUpdateTime" Type="DateTime" Precision="3" />
     <Property Name="ActiveStatus" Type="Boolean" />
@@ -34,16 +53,6 @@
     <Property Name="Deleted" Type="Boolean" />
     <NavigationProperty Name="Customer" Relationship="Alten_Connected_VehiclesModel.FK_Vehicles_Customer" FromRole="Vehicle" ToRole="Customer" />
   </EntityType>
-  <EntityContainer Name="Alten_Connected_VehiclesEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Customers" EntityType="Self.Customer" />
-    <EntitySet Name="RawTransctions" EntityType="Self.RawTransction" />
-    <EntitySet Name="Vehicles" EntityType="Self.Vehicle" />
-    <AssociationSet Name="FK_Vehicles_Customer" Association="Alten_Connected_VehiclesModel.FK_Vehicles_Customer">
-      <End Role="Customer" EntitySet="Customers" />
-      <End Role="Vehicle" EntitySet="Vehicles" />
-    </AssociationSet>
-    <EntitySet Name="Transactions" EntityType="Alten_Connected_VehiclesModel.Transaction" />
-  </EntityContainer>
   <Association Name="FK_Vehicles_Customer">
     <End Type="Alten_Connected_VehiclesModel.Customer" Role="Customer" Multiplicity="0..1" />
     <End Type="Alten_Connected_VehiclesModel.Vehicle" Role="Vehicle" Multiplicity="*" />
@@ -56,13 +65,4 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityType Name="Transaction">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Guid" Nullable="false" />
-    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
-    <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Status" Type="Boolean" Nullable="false" />
-  </EntityType>
 </Schema>

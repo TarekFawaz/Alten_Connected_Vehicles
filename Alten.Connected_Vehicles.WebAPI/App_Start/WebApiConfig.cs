@@ -33,7 +33,7 @@ namespace Alten.Connected_Vehicles.WebAPI
 
            
 
-            container.Register<DbContext, Alten_Connected_VehiclesEntities>(Reuse.Singleton);
+            container.Register<DbContext, Alten_Connected_VehiclesEntities>(Reuse.InWebRequest);
 
             container.Register(typeof(IRepository<>), typeof(MSSQLRepository<>), setup: Setup.With(allowDisposableTransient: true));
             container.Register(typeof(IUnitOfWork<>),typeof(UnitOfWork<>), setup: Setup.With(allowDisposableTransient: true));

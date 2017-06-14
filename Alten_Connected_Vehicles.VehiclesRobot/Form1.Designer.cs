@@ -31,9 +31,10 @@
             this.txt_ServerIP = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_port = new System.Windows.Forms.TextBox();
+            this.btn_Start = new System.Windows.Forms.Button();
+            this.btn_Stop = new System.Windows.Forms.Button();
+            this.btn_Send = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_ServerIP
@@ -62,41 +63,54 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Server Port";
             // 
-            // textBox1
+            // txt_port
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(80, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "110";
+            this.txt_port.Location = new System.Drawing.Point(117, 63);
+            this.txt_port.Name = "txt_port";
+            this.txt_port.Size = new System.Drawing.Size(80, 22);
+            this.txt_port.TabIndex = 3;
+            this.txt_port.Text = "110";
             // 
-            // button1
+            // btn_Start
             // 
-            this.button1.Location = new System.Drawing.Point(244, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Start.Location = new System.Drawing.Point(239, 18);
+            this.btn_Start.Name = "btn_Start";
+            this.btn_Start.Size = new System.Drawing.Size(75, 23);
+            this.btn_Start.TabIndex = 4;
+            this.btn_Start.Text = "Start";
+            this.btn_Start.UseVisualStyleBackColor = true;
+            this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
             // 
-            // button2
+            // btn_Stop
             // 
-            this.button2.Location = new System.Drawing.Point(347, 44);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Stop";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Stop.Enabled = false;
+            this.btn_Stop.Location = new System.Drawing.Point(239, 76);
+            this.btn_Stop.Name = "btn_Stop";
+            this.btn_Stop.Size = new System.Drawing.Size(75, 23);
+            this.btn_Stop.TabIndex = 5;
+            this.btn_Stop.Text = "Stop";
+            this.btn_Stop.UseVisualStyleBackColor = true;
+            this.btn_Stop.Click += new System.EventHandler(this.btn_Stop_Click);
+            // 
+            // btn_Send
+            // 
+            this.btn_Send.Location = new System.Drawing.Point(239, 47);
+            this.btn_Send.Name = "btn_Send";
+            this.btn_Send.Size = new System.Drawing.Size(75, 23);
+            this.btn_Send.TabIndex = 6;
+            this.btn_Send.Text = "Send";
+            this.btn_Send.UseVisualStyleBackColor = true;
+            this.btn_Send.Click += new System.EventHandler(this.btn_Send_Click);
             // 
             // frm_VehicleRobot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 120);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(356, 120);
+            this.Controls.Add(this.btn_Send);
+            this.Controls.Add(this.btn_Stop);
+            this.Controls.Add(this.btn_Start);
+            this.Controls.Add(this.txt_port);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_ServerIP);
@@ -113,9 +127,10 @@
         private System.Windows.Forms.TextBox txt_ServerIP;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_port;
+        private System.Windows.Forms.Button btn_Start;
+        private System.Windows.Forms.Button btn_Stop;
+        private System.Windows.Forms.Button btn_Send;
     }
 }
 

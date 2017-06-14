@@ -6,10 +6,10 @@
     <edmx:Diagrams>
       <Diagram DiagramId="235346628a5b41059ebe4abe4c1e6278" Name="Diagram1">
         <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.Customer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.RawTransction" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.Vehicle" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="Alten_Connected_VehiclesModel.FK_Vehicles_Customer" />
+        <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.RawTransction" Width="1.5" PointX="3.375" PointY="0.75" />
         <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.Transaction" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Alten_Connected_VehiclesModel.Vehicle" Width="1.5" PointX="3" PointY="5.375" />
+        <AssociationConnector Association="Alten_Connected_VehiclesModel.FK_Vehicles_Customer" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

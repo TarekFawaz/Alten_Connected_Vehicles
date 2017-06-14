@@ -98,8 +98,8 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.DataProcessor
             {
                 byte[] UnitIDBytes = new byte[6];
                 ASCIIEncoding encoder = new ASCIIEncoding();
-                Array.Copy(RawMessage, 3, UnitIDBytes, 0, 6);
-                return BitConverter.ToString(UnitIDBytes, 0);
+                Array.Copy(RawMessage, 2, UnitIDBytes, 0, 6);
+                return encoder.GetString(UnitIDBytes, 0,6);
             }
             catch
             {
@@ -114,9 +114,17 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.DataProcessor
         private bool GetMessageStatus()
         {
             byte[] lengthBytes = new byte[1];
-            Array.Copy(RawMessage, 9, lengthBytes, 0, 1);
+            Array.Copy(RawMessage, 8, lengthBytes, 0, 1);
 
-            return BitConverter.ToBoolean(lengthBytes, 0);
+            string hexvalue =BitConverter.ToString(lengthBytes, 0).Replace("-","");
+            if(hexvalue.Length>1)
+            {
+                if(hexvalue[1]=='1')
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         #endregion 

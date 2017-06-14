@@ -14,7 +14,7 @@ namespace Alten.Connected_Vehicles.DAL
     
     public partial class RawTransction
     {
-        public System.Guid ID { get; set; }
+        public int ID { get; set; }
         public byte[] RawData { get; set; }
         public Nullable<System.DateTime> EntryDate { get; set; }
     }

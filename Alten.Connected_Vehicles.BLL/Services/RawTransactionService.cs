@@ -44,7 +44,7 @@ namespace Alten.Connected_Vehicles.BLL.Services
                     {
                         Repo.Add(new RawTransction()
                         {
-                            ID = Guid.NewGuid(),
+                            
                             RawData = RawData,
                             EntryDate = DateTime.Now
                         });

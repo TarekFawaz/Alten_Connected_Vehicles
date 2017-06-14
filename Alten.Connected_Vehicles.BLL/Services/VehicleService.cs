@@ -58,7 +58,7 @@ namespace Alten.Connected_Vehicles.BLL.Services
         public bool UpdateVehicle(string RegNo, bool status)
         {
             bool bRet = false;
-            var vehicleobj = Repo.FirstOrDefault(v => v.RegNo == RegNo);
+            var vehicleobj = Repo.FindById(RegNo);
             if (vehicleobj != null)
             {
                 using (UoM)

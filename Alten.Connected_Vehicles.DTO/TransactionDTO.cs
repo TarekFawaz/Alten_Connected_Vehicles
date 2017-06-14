@@ -15,7 +15,7 @@ namespace Alten.Connected_Vehicles.DTO
     {
         #region Properties 
 
-        public Guid ID { get; set; }
+        public int ID { get; set; }
         public string RegNo { get; set; }
         public DateTime EntryDate { get; set; }
         public bool Status { get; set; }
@@ -61,8 +61,8 @@ namespace Alten.Connected_Vehicles.DTO
             {
                 RegNo = this.RegNo,
                 EntryDate = this.EntryDate,
-                Status = this.Status,
-                ID = this.ID != null ? this.ID : Guid.NewGuid()
+                Status = this.Status
+               
             };
             
         }

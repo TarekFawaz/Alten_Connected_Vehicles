@@ -15,22 +15,22 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="RawData" Type="varbinary" MaxLength="256" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RawData" Type="varbinary(max)" />
     <Property Name="EntryDate" Type="datetime" />
   </EntityType>
   <EntityType Name="Transactions">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
     <Property Name="RegNo" Type="varchar" MaxLength="6" Nullable="false" />
     <Property Name="EntryDate" Type="datetime" Nullable="false" />
     <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Vehicles">
     <Key>
-      <PropertyRef Name="ID" />
+      <PropertyRef Name="RegNo" />
     </Key>
     <Property Name="ID" Type="varchar" MaxLength="25" Nullable="false" />
     <Property Name="RegNo" Type="varchar" MaxLength="10" Nullable="false" />

@@ -14,7 +14,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
     {
 
         #region Member data
-        private string QUEUE_NAME= ".\\Private$\\Vehicles_Messages";
+        private string QUEUE_NAME= ".\\Private$\\ACVS";
         /// <summary>
         /// Messaging Queue
         /// </summary>
@@ -125,7 +125,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
                                     // Save Transaction into Transaction Database 
                                     TransactionDTO transaction = new TransactionDTO()
                                     {
-                                        ID = Guid.NewGuid(),
+                                        
                                         RegNo=PacketProcessor.UnitRegNo,
                                         EntryDate=DateTime.Now,
                                         Status=PacketProcessor.UnitStatus
@@ -134,7 +134,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
                                     WebApiConsumer.SendTransaction(transaction);
                                 }
                                 
-                                m_MQ.ReceiveById(message.Id);
+                                m_MQ.Receive();
 
                             }
                         }

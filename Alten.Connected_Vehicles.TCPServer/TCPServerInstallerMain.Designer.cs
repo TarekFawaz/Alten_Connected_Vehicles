@@ -40,7 +40,6 @@
             // TCPServerInstaller
             // 
             this.TCPServerInstaller.ServiceName = "TCPServer_Service";
-            this.TCPServerInstaller.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // TCPServerInstallerMain
             // 

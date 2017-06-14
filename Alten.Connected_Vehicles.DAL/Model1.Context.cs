@@ -27,7 +27,7 @@ namespace Alten.Connected_Vehicles.DAL
     
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<RawTransction> RawTransctions { get; set; }
-        public virtual DbSet<Vehicle> Vehicles { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
+        public virtual DbSet<Vehicle> Vehicles { get; set; }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using Alten.Connected_Vehicles.Infrastructure.Logger;
 using Alten.Connected_Vehicles.TCPServer.Common.WebAPIConsumer;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
 
 
@@ -92,16 +94,27 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
         public void AcceptClientData(byte[] bufferdata)
         {
             // Send Data to Queue
-            m_QueueManager.SendToQueue(bufferdata);
-            // Save Raw Message for archiving 
 
-            if (!WebApiConsumer.SendRawData(bufferdata))
+            List<byte[]> MultiParts = BitWorks.Separate(bufferdata, Encoding.ASCII.GetBytes("$$"));
+            if (MultiParts.Count > 0)
             {
-                // if Failed to save RAW message into Database throgh the API
-                // Save Raw Message into log File
-                //the purpose of adding such line is to keep track of the incoming transactions 
-                // and avoid missing any packet
-                log.LogToFile(string.Format("Raw Data: {0} \r\n", bufferdata.ToString()));
+                foreach (byte[] singlePacket in MultiParts)
+                {
+                  
+                    // Save Raw Message for archiving 
+
+                    if (!WebApiConsumer.SendRawData(singlePacket))
+                    {
+                        // if Failed to save RAW message into Database throgh the API
+                        // Save Raw Message into log File
+                        //the purpose of adding such line is to keep track of the incoming transactions 
+                        // and avoid missing any packet
+                        log.LogToFile(string.Format("Raw Data: {0} \r\n", BitConverter.ToString(singlePacket)));
+                    }
+                    //Push message into the queue to start message processing 
+                    //and to send notification through signalR
+                    m_QueueManager.SendToQueue(singlePacket);
+                }
             }
         }
 

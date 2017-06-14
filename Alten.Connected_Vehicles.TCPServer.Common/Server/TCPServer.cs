@@ -143,13 +143,13 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
                 try
                 {
 
-                    Microsoft.Owin.Hosting.WebApp.Start<Startup>("http://192.168.1.8:3578"); // Port should be configuration 
+                    Microsoft.Owin.Hosting.WebApp.Start<Startup>(string.Format("http://{0}:8088",SERVER_IP)); // Port should be configuration 
 
                     log.LogToFile("start SignalR Self host service");
                 }
                 catch (Exception e)
                 {
-                    log.LogToFile(string.Format("Start Signalr self host service Exception : {0}", e.Message));
+                    log.LogToFile(string.Format("Start Signalr self host service Exception : {0} \r\n - Stack Tarce: {1} \r\n -inner message:{2}", e.Message,e.StackTrace,e.InnerException.Message));
                 }
 
             }
@@ -290,7 +290,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
                 // request from any client accept it (Wait indefinitely).
                 clientSocket = m_server.EndAcceptSocket(result);
                 //
-                MessageQueue msmq = new MessageQueue();
+                
                 // Create a SocketListener object for the client.
                 socketListener = new TCPSocketListener(clientSocket);
 
@@ -298,7 +298,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
                 // Add the socket listener to an array list in a thread 
                 // safe fashon.
                 Monitor.Enter(m_socketListenersList);
-                lock (m_socketListenersList)
+                //lock (m_socketListenersList)
                 {
                     m_socketListenersList.Add(socketListener);
                 }
