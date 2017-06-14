@@ -8,3 +8,12 @@ E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connect
 E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.csprojResolveAssemblyReference.cache
 E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.dll
 E:\personal\Alten_Task\Connected_Vehicels\Alten.Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.pdb
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.dll.config
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.dll
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.pdb
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.dll
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.xml
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.dll
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.pdb

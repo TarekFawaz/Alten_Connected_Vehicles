@@ -1,6 +1,8 @@
-﻿using Alten.Connected_Vehicles.Infrastructure.Logger;
+﻿using Alten.Connected_Vehicles.DTO;
+using Alten.Connected_Vehicles.Infrastructure.Logger;
 using Alten.Connected_Vehicles.TCPServer.Common.DataProcessor;
 using Alten.Connected_Vehicles.TCPServer.Common.SignalR;
+using Alten.Connected_Vehicles.TCPServer.Common.WebAPIConsumer;
 using System;
 
 using System.Messaging;
@@ -121,7 +123,15 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
                                     }
 
                                     // Save Transaction into Transaction Database 
-
+                                    TransactionDTO transaction = new TransactionDTO()
+                                    {
+                                        ID = Guid.NewGuid(),
+                                        RegNo=PacketProcessor.UnitRegNo,
+                                        EntryDate=DateTime.Now,
+                                        Status=PacketProcessor.UnitStatus
+                           
+                                    };
+                                    WebApiConsumer.SendTransaction(transaction);
                                 }
                                 
                                 m_MQ.ReceiveById(message.Id);

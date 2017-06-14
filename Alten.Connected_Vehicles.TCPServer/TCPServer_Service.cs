@@ -75,16 +75,23 @@ namespace Alten.Connected_Vehicles.TCPService
 
         protected override void OnStart(string[] args)
         {
-            // Create the Server Object and Start it.
-            if (!string.IsNullOrEmpty(ServerIP) && !string.IsNullOrEmpty(ServerPort))
+            try
             {
-                server = new TCPServer.Common.Server.TCPServer(ServerIP, ServerPort);
-                server.StartServer();
+                // Create the Server Object and Start it.
+                if (!string.IsNullOrEmpty(ServerIP) && !string.IsNullOrEmpty(ServerPort))
+                {
+                    server = new TCPServer.Common.Server.TCPServer(ServerIP, ServerPort);
+                    server.StartServer();
+                }
+                else
+                {
+                    log.LogToFile("Fail Fast:Server IP or Port Not configured");
+                    Environment.FailFast("Server IP or Port Not configured");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                log.LogToFile("Fail Fast:Server IP or Port Not configured");
-                Environment.FailFast("Server IP or Port Not configured");
+                log.LogToFile(string.Format("TCP Server Service Exception: Message {0} - Stack Trace{1}", ex.Message, ex.StackTrace));
             }
         }
 

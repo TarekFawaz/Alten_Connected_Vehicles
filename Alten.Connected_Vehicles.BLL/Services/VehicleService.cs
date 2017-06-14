@@ -64,6 +64,7 @@ namespace Alten.Connected_Vehicles.BLL.Services
                 using (UoM)
                 {
                     vehicleobj.ActiveStatus = status;
+                    vehicleobj.LastUpdateTime = DateTime.Now;
                     Repo.Update(vehicleobj);
                 }
                 bRet = true;

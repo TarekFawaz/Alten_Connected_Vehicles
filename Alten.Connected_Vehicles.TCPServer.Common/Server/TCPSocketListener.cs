@@ -1,4 +1,5 @@
 ﻿using Alten.Connected_Vehicles.Infrastructure.Logger;
+using Alten.Connected_Vehicles.TCPServer.Common.WebAPIConsumer;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -93,13 +94,15 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
             // Send Data to Queue
             m_QueueManager.SendToQueue(bufferdata);
             // Save Raw Message for archiving 
-            
 
-
-            // Save Raw Message into log File
-            //the purpose of adding such line is to keep track of the incoming transactions 
-            // and avoid missing any packet
-            log.LogToFile(string.Format("Raw Data: {0} \r\n",bufferdata.ToString()));
+            if (!WebApiConsumer.SendRawData(bufferdata))
+            {
+                // if Failed to save RAW message into Database throgh the API
+                // Save Raw Message into log File
+                //the purpose of adding such line is to keep track of the incoming transactions 
+                // and avoid missing any packet
+                log.LogToFile(string.Format("Raw Data: {0} \r\n", bufferdata.ToString()));
+            }
         }
 
         public bool AuthenticateClient()

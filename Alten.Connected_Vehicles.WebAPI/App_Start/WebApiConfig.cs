@@ -41,6 +41,8 @@ namespace Alten.Connected_Vehicles.WebAPI
 
             container.Register<ICustomerService, CustomerService>();
             container.Register<IVehicleService, VehicleService>();
+            container.Register<IRawTransactionService, RawTransactionService>();
+            container.Register<ITransactionService, TransactionService>();
 
             /////////////End of DI Configuration ////////////////////////
 

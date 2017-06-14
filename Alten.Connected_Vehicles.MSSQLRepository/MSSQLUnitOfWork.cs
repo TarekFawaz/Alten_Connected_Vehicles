@@ -49,6 +49,7 @@ namespace Alten.Connected_Vehicles.MSSQLRepository
         public void Commit()
         {
             _DbContext.SaveChanges();
+            
         }
 
         #region Disposing 

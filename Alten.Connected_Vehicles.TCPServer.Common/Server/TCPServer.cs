@@ -143,7 +143,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
                 try
                 {
 
-                    Microsoft.Owin.Hosting.WebApp.Start<Startup>("http://*:6666"); // Port should be configuration 
+                    Microsoft.Owin.Hosting.WebApp.Start<Startup>("http://192.168.1.8:3578"); // Port should be configuration 
 
                     log.LogToFile("start SignalR Self host service");
                 }

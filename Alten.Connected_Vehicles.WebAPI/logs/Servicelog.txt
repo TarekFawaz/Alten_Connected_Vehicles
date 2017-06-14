@@ -1,0 +1,40 @@
+[6/14/2017 12:03:15 AM] - Transaction BLL Exception: Message An error occurred while updating the entries. See the inner exception for details. - Stack Trace   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Commit() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 51
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose(Boolean disposing) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 60
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 67
+   at Alten.Connected_Vehicles.BLL.Services.TransactionService.AddTransaction(TransactionDTO transactionObject) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.BLL\Services\TransactionService.cs:line 43 
+ 
+[6/14/2017 12:03:54 AM] - Transaction BLL Exception: Message An error occurred while updating the entries. See the inner exception for details. - Stack Trace   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Commit() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 51
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose(Boolean disposing) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 60
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 67
+   at Alten.Connected_Vehicles.BLL.Services.TransactionService.AddTransaction(TransactionDTO transactionObject) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.BLL\Services\TransactionService.cs:line 43 
+ 
+[6/14/2017 12:05:34 AM] - Transaction BLL Exception: Message An error occurred while updating the entries. See the inner exception for details. - Stack Trace   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Commit() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 51
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose(Boolean disposing) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 60
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 67
+   at Alten.Connected_Vehicles.BLL.Services.TransactionService.AddTransaction(TransactionDTO transactionObject) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.BLL\Services\TransactionService.cs:line 43 
+ 
+[6/14/2017 12:08:13 AM] - Transaction BLL Exception: Message An error occurred while updating the entries. See the inner exception for details. - Stack Trace   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Commit() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 51
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose(Boolean disposing) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 60
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 67
+   at Alten.Connected_Vehicles.BLL.Services.TransactionService.AddTransaction(TransactionDTO transactionObject) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.BLL\Services\TransactionService.cs:line 43 
+ 
+[6/14/2017 12:09:42 AM] - Transaction BLL Exception: Message An error occurred while updating the entries. See the inner exception for details. - Stack Trace   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Commit() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 51
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose(Boolean disposing) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 60
+   at Alten.Connected_Vehicles.MSSQLRepository.UnitOfWork`1.Dispose() in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.MSSQLRepository\MSSQLUnitOfWork.cs:line 67
+   at Alten.Connected_Vehicles.BLL.Services.TransactionService.AddTransaction(TransactionDTO transactionObject) in E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.BLL\Services\TransactionService.cs:line 43 
+ 

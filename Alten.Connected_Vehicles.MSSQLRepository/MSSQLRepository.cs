@@ -36,6 +36,9 @@ namespace Alten.Connected_Vehicles.MSSQLRepository
         {
             if (dbContext == null) throw new ArgumentNullException("dbContext is null"); /// if Database context not initalized Through Exception
             this._DbContext = dbContext;
+
+            _DbContext.Configuration.LazyLoadingEnabled = false;
+            
             
         }
         #endregion 
@@ -47,7 +50,7 @@ namespace Alten.Connected_Vehicles.MSSQLRepository
             try
             {
                 Entity = _DbContext.Set<T>().Add(Entity);
-                _DbContext.SaveChanges();
+               
 
             }
             catch (DbEntityValidationException dbEx)

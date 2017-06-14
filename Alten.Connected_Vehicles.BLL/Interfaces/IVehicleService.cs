@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// build the required business layer for vehicles
+/// </summary>
 namespace Alten.Connected_Vehicles.BLL.Interfaces
 {
     public interface IVehicleService

@@ -22,6 +22,10 @@ namespace Alten.Connected_Vehicles.DTO
         #endregion
 
         #region CTOR
+        public TransactionDTO()
+        {
+
+        }
         public TransactionDTO(Transaction TransDAL)
         {
             this.ID = TransDAL.ID;

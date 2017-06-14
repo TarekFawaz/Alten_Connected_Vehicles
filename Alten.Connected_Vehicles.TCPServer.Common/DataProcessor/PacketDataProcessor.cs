@@ -15,7 +15,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.DataProcessor
         #region Data Members
 
        
-        public string CheckSum { get; set; }
+       
 
         public MessageDirection Direction { get; set; }
 
