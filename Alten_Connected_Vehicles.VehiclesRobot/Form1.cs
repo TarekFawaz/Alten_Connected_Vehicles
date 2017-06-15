@@ -148,26 +148,26 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
            SetButtonEnabled(btn_Send,false);
             int idx = 0;
             int xx = 0;
+            Random rnd = new Random(0);
             while (xx<1025)
             {
-
-                if(idx==14)
-                {
-                    idx = 0;
-                }
+               
+                
+                    idx = rnd.Next(0,14);
+               
                 string theMessage = Packets[idx];
 
                 byte[] msg = Encoding.ASCII.GetBytes(theMessage);
 
                 // Send the data through the socket 
                 int bytesSent = socketSender.Send(msg, SocketFlags.None);
-                idx++;
+                //idx++;
                 xx++;
-                Thread.Sleep(1000);
+               // Thread.Sleep(100);
             }
 
-            socketSender.Shutdown(SocketShutdown.Both);
-            socketSender.Close();
+            //socketSender.Shutdown(SocketShutdown.Both);
+            //socketSender.Close();
             SetButtonEnabled(btn_Send, true);
         }
         #endregion

@@ -20,15 +20,15 @@
 
 
         signalR.notifyStatus(function (RegNo, status) {
-            /*$.each($scope.customers, function (i) {
-                $.each($scope.customers.Vehicles, function (d) {
+           $.each($scope.customers, function (i) {
+                $.each($scope.customers[i].Vehicles, function (d) {
                     if ($scope.customers[i].Vehicles[d].RegNo === RegNo) {
                         $scope.customers[i].Vehicles[d].ActiveStatus = status;
                         $scope.$apply();
                     }
                 });
-            });*/
-            $scope.loadCustomers();
+            });
+           
             
 
         });
