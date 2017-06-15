@@ -64,8 +64,8 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
             Packets = new List<string>();
             
 
-            Packets.Add("$$DEF4561");
             Packets.Add("$$DEF4560");
+            Packets.Add("$$DEF4561");
 
             Packets.Add("$$STU9011");
             Packets.Add("$$STU9010");
@@ -73,14 +73,14 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
             Packets.Add("$$PQR6781");
             Packets.Add("$$PQR6780");
             
-            Packets.Add("$$MNO3451");
             Packets.Add("$$MNO3450");
+            Packets.Add("$$MNO3451");
 
             Packets.Add("$$JKL0121");
             Packets.Add("$$JKL0120");
 
             Packets.Add("$$GHI7890");
-            Packets.Add("$$GHI7890");
+            Packets.Add("$$GHI7891");
 
             Packets.Add("$$ABC1231");
             Packets.Add("$$ABC1230");
@@ -147,7 +147,8 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
         {
            SetButtonEnabled(btn_Send,false);
             int idx = 0;
-            while (socketSender.Connected)
+            int xx = 0;
+            while (xx<1025)
             {
 
                 if(idx==14)
@@ -161,6 +162,8 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
                 // Send the data through the socket 
                 int bytesSent = socketSender.Send(msg, SocketFlags.None);
                 idx++;
+                xx++;
+                Thread.Sleep(3000);
             }
 
             socketSender.Shutdown(SocketShutdown.Both);

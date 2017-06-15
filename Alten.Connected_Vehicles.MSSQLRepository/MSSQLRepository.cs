@@ -37,7 +37,8 @@ namespace Alten.Connected_Vehicles.MSSQLRepository
             if (dbContext == null) throw new ArgumentNullException("dbContext is null"); /// if Database context not initalized Through Exception
             this._DbContext = dbContext;
 
-            _DbContext.Configuration.LazyLoadingEnabled = false;
+            // We can use Lazy load for small amount of data
+            //_DbContext.Configuration.LazyLoadingEnabled = false;
             
             
         }

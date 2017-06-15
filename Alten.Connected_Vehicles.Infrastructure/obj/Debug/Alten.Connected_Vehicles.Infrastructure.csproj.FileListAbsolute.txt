@@ -15,3 +15,4 @@ E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.Infrastruc
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.Infrastructure\bin\Debug\RestSharp.xml
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.Infrastructure\obj\Debug\Alten.Connected_Vehicles.Infrastructure.dll
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.Infrastructure\obj\Debug\Alten.Connected_Vehicles.Infrastructure.pdb
+E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.Infrastructure\obj\Debug\Alten.Connected_Vehicles.Infrastructure.csprojResolveAssemblyReference.cache

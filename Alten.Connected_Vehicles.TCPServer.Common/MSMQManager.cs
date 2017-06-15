@@ -14,7 +14,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
     {
 
         #region Member data
-        private string QUEUE_NAME= ".\\Private$\\ACVS";
+        private string QUEUE_NAME= ".\\Private$\\ATVS";
         /// <summary>
         /// Messaging Queue
         /// </summary>
@@ -115,12 +115,10 @@ namespace Alten.Connected_Vehicles.TCPServer.Common
                                     PacketProcessor.ProcessData();
 
                                     //Notify Clients through SignalR
-                                    string ConnectionID = TCPServerHub.GetConnection(PacketProcessor.UnitRegNo);
-                                    if (!string.IsNullOrEmpty(ConnectionID))
-                                    {
+                                    
                                         var hubContext = Microsoft.AspNet.SignalR.GlobalHost.ConnectionManager.GetHubContext<SignalR.TCPServerHub>();
-                                        hubContext.Clients.Client(ConnectionID).NotifyStatus(PacketProcessor.UnitRegNo, PacketProcessor.UnitStatus);
-                                    }
+                                        hubContext.Clients.All.notifyStatus(PacketProcessor.UnitRegNo, PacketProcessor.UnitStatus);
+                                   
 
                                     // Save Transaction into Transaction Database 
                                     TransactionDTO transaction = new TransactionDTO()

@@ -28,6 +28,7 @@ namespace Alten.Connected_Vehicles.WebAPI.Controllers
         /// <returns></returns>
         public JsonResult<List<CustomerDTO>> Get()
         {
+
             return Json(_customerService.GetCustomers());
         }
 

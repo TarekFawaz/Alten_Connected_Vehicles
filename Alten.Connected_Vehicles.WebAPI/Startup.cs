@@ -13,6 +13,7 @@ namespace Alten.Connected_Vehicles.WebAPI
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+           
         }
     }
 }
