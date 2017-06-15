@@ -17,81 +17,81 @@
 }
 
 <style>
-    .reveal .fa {
-        font-family: 'FontAwesome';
-        font-style: normal;
-    }
+       .reveal .fa {
+           font-family: 'FontAwesome';
+           font-style: normal;
+       }
 
-    ul {
-        list-style: none;
-        padding-left: 1px;
-    }
- .Customer {
-        z-index: 88;
-        height: auto;
-        width: 30%;
-       
-        float:left;
-        margin-top:10px!important;
-        margin-left:25px;
-        left: 0%;
-        opacity: 1;
-    }
+       ul {
+           list-style: none;
+           padding-left: 1px;
+       }
+    .Customer {
+           z-index: 88;
+           height: auto;
+           width: 30%;
 
-   
+           float:left;
+           margin-top:10px!important;
+           margin-left:25px;
+           left: 0%;
+           opacity: 1;
+       }
+    .rcorners2 {
+    border-radius: 25px;
+    border: 1px solid #428bca;
+    
+}
 
-    h3.media-heading {
-        font-size: 11px;
-        font-family: 'Comic Sans MS';
-        float: left;
-    }
+
+       h3.media-heading {
+           font-size: 11px;
+           font-family: 'Comic Sans MS';
+           float: left;
+       }
 </style>
 
 <div class="jumbotron">
     <h1>Alten Connected Vehicles.</h1>
     <p class="lead">Development Task - By Tarek Fawaz</p>
-    
+
 </div>
 
 <div ng-app="VehiclesApp" ng-controller="VehiclesController">
-    
+
     <div id="Customers">
         <div class="container">
             <div class="row">
-                
-                    <div class="media Customer" ng-repeat="customer in customers track by $index">
 
-                        <div class="media-body">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <span class="fa fa-Customer"></span>&nbsp; &nbsp; {{customer.Name}} <br /> {{customer.Address}}
+                <div class="media Customer" ng-repeat="customer in customers track by $index">
 
-                                </div>
+                    <div class="media-body">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <span class="fa fa-user"></span>&nbsp; &nbsp; {{customer.Name}} <br /> {{customer.Address}}
 
                             </div>
-                            <div class="panel-body" style=" min-height:100px; max-height:600px;" ng-class="">
-                                <div class="media" ng-repeat="vehicle in customer.Vehicles track by $index">
-                                    <div class="media-body">
-                                        <h3 class="media-heading">
-                                            <strong>
 
-                                                
+                        </div>
+                        <div class="panel-body rcorners2" style=" min-height:100px; max-height:600px;" ng-class="">
+                            <div class="media" ng-repeat="vehicle in customer.Vehicles track by $index">
+                                <div class="media-body">
+                                    <h3 class="media-heading">
+                                        <i class="fa fa-car" style="color:#428bca"></i> <strong>
+                                             ID: {{vehicle.ID}} - RegNo: {{vehicle.RegNo}} - <i class="fa fa-circle" style="color:red" ng-show="vehicle.ActiveStatus==false"></i>
+                                            <i class="fa fa-circle" style="color:green" ng-show="vehicle.ActiveStatus==true"> </i>
 
-                                                ID: {{vehicle.ID}} - RegNo: {{vehicle.RegNo}} - <i class="fa fa-circle" style="color:red" ng-show="vehicle.ActiveStatus==false"></i>
-<i class="fa fa-circle" style="color:green" ng-show="vehicle.ActiveStatus==true"> </i>
-
-                                            </strong>
-                                        </h3>
-                                    </div>
+                                        </strong>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
-                
+                </div>
+
+
             </div>
         </div>
     </div>
-    </div>
+</div>
 
-  

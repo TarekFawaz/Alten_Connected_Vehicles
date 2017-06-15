@@ -163,7 +163,7 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
                 int bytesSent = socketSender.Send(msg, SocketFlags.None);
                 idx++;
                 xx++;
-                Thread.Sleep(3000);
+                Thread.Sleep(1000);
             }
 
             socketSender.Shutdown(SocketShutdown.Both);

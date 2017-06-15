@@ -7,9 +7,7 @@
             console.log("started");
             connection = $.connection.hub.start();
         },
-        //////////////////// SERVER METHODS/////////////////
-        
-        
+     
         ////////////////////// CLIENT METHODS////////////////////            
         
         notifyStatus: function (callback) {
