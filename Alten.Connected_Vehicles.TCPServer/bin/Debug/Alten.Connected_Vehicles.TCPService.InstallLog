@@ -11,3 +11,16 @@ Affected parameters are:
    logtoconsole = 
    logfile = E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.InstallLog
    assemblypath = E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.exe
+Installing assembly 'C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.InstallLog
+   assemblypath = C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.exe
+Installing service TCPServer_Service...
+Service TCPServer_Service has been successfully installed.
+Creating EventLog source TCPServer_Service in log Application...
+Committing assembly 'C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.InstallLog
+   assemblypath = C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.TCPServer\bin\Debug\Alten.Connected_Vehicles.TCPService.exe

@@ -1,4 +1,4 @@
-﻿using Alten.Connected_Vehicles.DAL;
+﻿using Alten.Connected_vehicle.Model;
 using System;
 using System.Collections.Generic;
 

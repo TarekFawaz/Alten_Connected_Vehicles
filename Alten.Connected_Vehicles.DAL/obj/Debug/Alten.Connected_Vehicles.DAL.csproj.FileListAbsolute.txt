@@ -17,3 +17,12 @@ E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\De
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.dll
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.dll.config
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\Alten.Connected_Vehicles.DAL.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DAL\obj\Debug\Alten.Connected_Vehicles.DAL.pdb

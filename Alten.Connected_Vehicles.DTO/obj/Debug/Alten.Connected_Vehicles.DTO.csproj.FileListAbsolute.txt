@@ -16,3 +16,12 @@ E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\De
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.csprojResolveAssemblyReference.cache
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.dll
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DTO.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_Vehicles.DTO.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_vehicle.Model.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\EntityFramework.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\Alten.Connected_vehicle.Model.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\bin\Debug\EntityFramework.xml
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.dll
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten.Connected_Vehicles.DTO\obj\Debug\Alten.Connected_Vehicles.DTO.pdb

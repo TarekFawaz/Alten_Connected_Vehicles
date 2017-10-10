@@ -69,7 +69,7 @@ namespace Alten.Connected_Vehicles.TCPServer.Common.Server
         {
             if (IPAddress.TryParse(serverIP, out SERVER_IP) && int.TryParse(port, out SERVER_PORT))
             {
-                Init(new IPEndPoint(SERVER_IP, SERVER_PORT));
+                Init(new IPEndPoint(IPAddress.Any, SERVER_PORT));
             }
             else
             {

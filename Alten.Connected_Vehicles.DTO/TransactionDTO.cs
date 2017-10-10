@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Alten.Connected_Vehicles.DAL;
+using Alten.Connected_vehicle.Model;
 namespace Alten.Connected_Vehicles.DTO
 {
 

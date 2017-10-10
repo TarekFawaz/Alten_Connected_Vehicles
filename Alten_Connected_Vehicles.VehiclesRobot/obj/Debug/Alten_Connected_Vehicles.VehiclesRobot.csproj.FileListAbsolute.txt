@@ -7,3 +7,11 @@ E:\personal\GITREPO\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRo
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.csproj.GenerateResource.Cache
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.exe
 E:\personal\GITREPO\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\bin\Debug\Alten_Connected_Vehicles.VehiclesRobot.exe.config
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\bin\Debug\Alten_Connected_Vehicles.VehiclesRobot.exe
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\bin\Debug\Alten_Connected_Vehicles.VehiclesRobot.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.frm_VehicleRobot.resources
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.Properties.Resources.resources
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.csproj.GenerateResource.Cache
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.exe
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.pdb

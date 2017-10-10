@@ -1,5 +1,5 @@
 ﻿using Alten.Connected_Vehicles.BLL.Interfaces;
-using Alten.Connected_Vehicles.DAL;
+using Alten.Connected_vehicle.Model;
 using Alten.Connected_Vehicles.DTO;
 using Alten.Connected_Vehicles.Infrastructure.Repository;
 using Alten.Connected_Vehicles.Infrastructure.UnitOfWork;

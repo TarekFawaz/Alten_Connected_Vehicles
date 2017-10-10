@@ -116,7 +116,7 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Exception: {0}", ex.ToString());
+                MessageBox.Show(string.Format("Exception: {0}", ex.ToString()),"Error");
             }
         }
         /// <summary>
@@ -161,13 +161,12 @@ namespace Alten_Connected_Vehicles.VehiclesRobot
 
                 // Send the data through the socket 
                 int bytesSent = socketSender.Send(msg, SocketFlags.None);
-                //idx++;
+                
                 xx++;
-               // Thread.Sleep(100);
+               
             }
 
-            //socketSender.Shutdown(SocketShutdown.Both);
-            //socketSender.Close();
+            
             SetButtonEnabled(btn_Send, true);
         }
         #endregion

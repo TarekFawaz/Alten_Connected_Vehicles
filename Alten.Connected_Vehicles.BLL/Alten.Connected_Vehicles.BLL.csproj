@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Alten.Connected_Vehicles.DAL\Alten.Connected_Vehicles.DAL.csproj">
-      <Project>{e93e3931-67b1-4cf4-b72c-5e46363281b9}</Project>
-      <Name>Alten.Connected_Vehicles.DAL</Name>
+    <ProjectReference Include="..\Alten.Connected_vehicle.Model\Alten.Connected_vehicle.Model.csproj">
+      <Project>{478d90f1-ac9d-4b14-8bf9-5edbd9d2517f}</Project>
+      <Name>Alten.Connected_vehicle.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Alten.Connected_Vehicles.DTO\Alten.Connected_Vehicles.DTO.csproj">
       <Project>{7223b651-e65c-429d-bc99-b4d36b19ff4f}</Project>

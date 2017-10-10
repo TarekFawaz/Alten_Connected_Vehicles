@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Alten.Connected_Vehicles.DAL;
+using Alten.Connected_vehicle.Model;
 
 /// <summary>
 /// Data transfer Objects, used for simplifying DAL obejcts to the client to deliver only the data scope needed for the client 

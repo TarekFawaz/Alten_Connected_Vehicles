@@ -8,7 +8,7 @@ using Newtonsoft.Json.Serialization;
 using DryIoc;
 using DryIoc.WebApi;
 using System.Data.Entity;
-using Alten.Connected_Vehicles.DAL;
+using Alten.Connected_vehicle.Model;
 using Alten.Connected_Vehicles.Infrastructure.UnitOfWork;
 using Alten.Connected_Vehicles.MSSQLRepository;
 using Alten.Connected_Vehicles.Infrastructure.Repository;
@@ -33,7 +33,7 @@ namespace Alten.Connected_Vehicles.WebAPI
 
            
 
-            container.Register<DbContext, Alten_Connected_VehiclesEntities>(Reuse.InWebRequest);
+            container.Register<DbContext, Connected_Vehicles_Models>(Reuse.InWebRequest);
 
             container.Register(typeof(IRepository<>), typeof(MSSQLRepository<>), setup: Setup.With(allowDisposableTransient: true));
             container.Register(typeof(IUnitOfWork<>),typeof(UnitOfWork<>), setup: Setup.With(allowDisposableTransient: true));

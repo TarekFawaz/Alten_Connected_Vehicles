@@ -5,12 +5,13 @@
 @section Scripts
 {
     <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
-    <script src="http://192.168.1.4:8088/signalr/hubs"></script>
+    <script src="http://10.46.12.108:8088/signalr/hubs"></script>
     <script src="~/BusinessScripts/angular.min.js"></script>
     <script src="~/Scripts/angular-flash.js"></script>
     <script type="text/javascript">
         var app = angular.module("VehiclesApp", ["flash"]);
     </script>
+
     <script src="~/BusinessScripts/Controllers.js"></script>
     <script src="~/BusinessScripts/Factories.js"></script>
 
@@ -59,11 +60,18 @@
 
 <div ng-app="VehiclesApp" ng-controller="VehiclesController">
 
+    <div id="Filters">
+        <label >Filter By Customer</label>
+        <select ng-model="selectedCustomerID" ng-change="loadCustomers();" >
+            <option value="-1">--- No Filter ---</option>
+            <option ng-repeat="customer in Listcustomers track by $index" value="{{customer.ID}}">{{customer.Name}}</option>
+        </select>
+    </div>
     <div id="Customers">
         <div class="container">
             <div class="row">
 
-                <div class="media Customer" ng-repeat="customer in customers track by $index">
+                <div class="media Customer" ng-repeat="customer in customers track by $index | filter : {ID: selectedCustomerID}: true ">
 
                     <div class="media-body">
                         <div class="panel panel-primary">
