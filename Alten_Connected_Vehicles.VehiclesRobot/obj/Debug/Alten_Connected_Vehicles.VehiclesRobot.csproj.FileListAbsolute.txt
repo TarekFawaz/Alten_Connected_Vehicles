@@ -15,3 +15,4 @@ C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Ve
 C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.csproj.GenerateResource.Cache
 C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.exe
 C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.pdb
+C:\Users\Tarek-Fawaz-pc\Source\Repos\Alten_Connected_Vehicles\Alten_Connected_Vehicles.VehiclesRobot\obj\Debug\Alten_Connected_Vehicles.VehiclesRobot.csprojResolveAssemblyReference.cache
