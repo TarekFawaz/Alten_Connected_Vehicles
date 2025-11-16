@@ -1,25 +1,36 @@
 namespace Alten.Connected_vehicle.Model
 {
     using System;
-    using System.Data.Entity;
+    using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-    using System.Data.Common;
 
     public partial class Connected_Vehicles_Models : DbContext
     {
         public Connected_Vehicles_Models()
-            : base("name=Connected_Vehicles_Models")
         {
         }
 
-       
+        public Connected_Vehicles_Models(DbContextOptions<Connected_Vehicles_Models> options)
+            : base(options)
+        {
+        }
+
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<RawTransction> RawTransctions { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
         public virtual DbSet<Vehicle> Vehicles { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                // Connection string will be configured via DI or app settings
+                // optionsBuilder.UseSqlServer("name=Connected_Vehicles_Models");
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>()
                 .Property(e => e.Name)
@@ -41,7 +52,6 @@ namespace Alten.Connected_vehicle.Model
                 .Property(e => e.RegNo)
                 .IsUnicode(false);
 
-            Database.SetInitializer<Connected_Vehicles_Models>(null);
             base.OnModelCreating(modelBuilder);
         }
     }
