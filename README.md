@@ -11,3 +11,6 @@ To make the smaple work you have to
 8- run robot application
 9- set IP and Port already configured for the service 
 10- Click start then click send
+
+## Architecture
+- C4 model diagram: [docs/architecture-c4.md](docs/architecture-c4.md)
